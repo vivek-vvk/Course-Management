@@ -1,0 +1,30 @@
+<div class="profilehome">
+    <div class="content mt-3">
+          <div class="row justify-content-center forms">
+              <div class="col-12 col-sm-6 col-md-5 first">
+  
+                  <div class="text-center mb-3">
+  
+                    <img src="https://library.kissclipart.com/20180910/ioq/kissclipart-woman-teacher-icon-clipart-computer-icons-teacher-84978ca5339279db.png" alt="image" class="rounded-circle" name="image" id="image" height="150vh"  
+                    [style.width.px]='imageWidth'
+                    [style.margin.px]="imageMargin">
+  
+                                   
+                  
+    
+                  <div class="input-group mb-3 mt-3">
+                    <span class="input-group-text" id="basic-addon3">Name</span>
+                    <input type="text" class="form-control" id="basic-url" #name="ngModel" disabled name="name" [(ngModel)]="student.name">
+                  </div>
+
+                  <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon3">Email</span>
+                    <input type="text" class="form-control" id="basic-url" name="email" [(ngModel)]="student.email" disabled maxlength="10" required #email="ngModel">
+                  </div>
+                </div>
+              
+  
+          </div>
+      </div>
+
+</div>

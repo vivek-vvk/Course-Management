@@ -1,0 +1,43 @@
+.profilehome{
+    min-height: 90vh;
+   
+}
+.trainerhome{
+    min-height: 90vh;
+}
+.content{
+    padding: 30px;
+    padding-top: 50px;
+}
+.first{
+    padding: 30px;
+    border: 2px solid rgb(255, 255, 255);
+    border-right: 0px;
+    background-color: rgba(209,214,220,255);
+
+
+}
+.second{
+    padding:30px;
+    border: 2px solid rgb(255, 255, 255);
+    border-left: 0px;
+    background-color: rgba(209,214,220,255);
+
+
+
+}
+@media only screen and (max-width: 575px) {
+    .forms {
+        border: 2px solid white;
+        
+    }
+    .second{
+        border: 0px;
+    }
+    .first{
+        border: 0px;
+    }
+  }
+span{
+    width :65px;
+}

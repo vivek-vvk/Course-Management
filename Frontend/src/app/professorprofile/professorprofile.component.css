@@ -1,0 +1,22 @@
+.profilehome{
+    min-height: 90vh;
+}
+.trainerhome{
+    min-height: 90vh;
+}
+.content{
+    padding: 30px;
+    padding-top: 50px;
+}
+.first{
+    padding: 30px;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: rgba(209,214,220,255);
+
+
+}
+
+
+span{
+    width :65px;
+}

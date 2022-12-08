@@ -1,0 +1,38 @@
+.aboutushome{
+    min-height: 90vh;
+    background-color: rgba(70, 131, 180, 0.186);
+    overflow-x: hidden;
+    
+}
+.mmmqwe{
+    margin-top: 25vh;
+}
+
+
+
+.datasecond{
+    padding-top: 70px;
+ }
+@media only screen and (max-width: 774px) {
+    
+    .datasecond{
+        padding-top: 0px;
+    }
+   
+  }
+
+  img{
+    border-radius: 15px;
+
+  }
+
+  .secondsection{
+    height: 90vh;
+    padding-top: 22vh;
+    background-color: rgba(135, 206, 250, 0.148);
+
+  }
+
+  p{
+    font-family: 'Sarabun', sans-serif;
+  }

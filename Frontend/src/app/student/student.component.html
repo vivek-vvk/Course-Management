@@ -1,0 +1,66 @@
+<nav class="navbar navbar-light bg-light shadow sticky-top">
+  <div class="container-fluid mx-5">
+    <a class="navbar-brand d-flex" href="/student">
+      <img src="https://gallery.kissclipart.com/20201125/eq/kissclipart-student-icon-back-to-school-icon-graduation-hat-ic-421311dd255d32ba.jpg" alt="" width="55" height="55" class="d-inline-block align-text-top">
+    <div><h3 style=" font-family: 'Titillium Web', sans-serif;" class="hddn mt-2 mx-2">Course Management System</h3></div>
+  </a>
+    <div>
+    <div>
+      <input type="button" (click)="btnclk5()"  value="LogOut" class="btn btn-danger headlogout">
+  </div>
+  <div>
+      <button class="btn btn-light menubar" data-bs-toggle="offcanvas" href="#offcanvasExample"><i class="fa-solid fa-bars fa-xl"></i></button>
+  </div>
+
+  <div class="offcanvas offcanvas-start bg-light menuwidth" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel"></h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div>
+          <h4><img src="https://gallery.kissclipart.com/20180912/tpw/kissclipart-scholar-icon-clipart-computer-icons-google-scholar-b03702c3ef8ab0a4.png" style="width:40px;">Student Dashboard</h4>
+        </div>
+
+        <div>
+
+          <div (click)="btnclk1()"  *ngIf="!auth.userverified()"   class="textdata"><i class="fa-solid fa-pen fa-lg pe-2"></i>Enroll</div>
+          <div (click)="btnclk()" class="textdata"><i class="fa-solid fa-house fa-lg pe-2"></i>Home</div>
+          <div  (click)="btnclk4()"   *ngIf="auth.userverified()"   class="textdata"><i class="fa-solid fa-message fa-lg pe-2"></i>Message</div>
+          <div  (click)="btnclk3()"   *ngIf="auth.userverified()"   class="textdata"><i class="fa-solid fa-user-circle fa-lg pe-2"></i>Profile</div>
+          <div   (click)="btnclk2()"   class="textdata"><i class="fa-solid fa-rectangle-list fa-lg pe-2"></i>Courses</div>
+          <div (click)="btnclk5()" class="textdata"> <i class="fa-solid fa-right-from-bracket fa-lg pe-2 text-danger"></i>Logout</div>
+              
+
+        </div>
+        
+      </div>
+  </div>
+    </div>
+
+
+
+  </div>
+  
+</nav>
+<div class="d-flex ">
+  <div class="sidebar bg-light shadow">
+       <h4 class="mt-4 text-center"><img src="https://gallery.kissclipart.com/20180912/tpw/kissclipart-scholar-icon-clipart-computer-icons-google-scholar-b03702c3ef8ab0a4.png" style="width:40px ;">STUDENT</h4>
+
+       <div (click)="btnclk1()"   *ngIf="!auth.userverified()"  class="para22 mt-4 overflow-hidden"><i class="fa-solid fa-pen fa-lg pe-2"></i>Enroll</div>
+       <div  (click)="btnclk()" class="para22 mt-4 "><i class="fa-solid fa-house fa-lg pe-2"></i>Home</div>
+       <div (click)="btnclk4()" *ngIf="auth.userverified()"    class="para22"><i class="fa-solid fa-message fa-lg pe-2"></i>Message</div>
+       <div (click)="btnclk3()"  *ngIf="auth.userverified()"   class="para22 "><i class="fa-solid fa-user-circle fa-lg pe-2"></i>Profile</div>
+       <div (click)="btnclk2()" class="para22"><i class="fa-solid fa-rectangle-list fa-lg pe-2"></i>Courses</div>
+ 
+      </div>
+  <div class="content">
+    
+    <router-outlet></router-outlet>
+
+  </div>
+
+</div>
+
+
+

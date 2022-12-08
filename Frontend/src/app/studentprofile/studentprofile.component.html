@@ -1,0 +1,58 @@
+<div class="profilehome">
+    <div class="content mt-3">
+          <div class="row justify-content-center forms">
+              <div class="col-12 col-sm-6 col-md-5 first">
+  
+                  <div class="text-center mb-3">
+  
+                    <img src="https://gallery.kissclipart.com/20181218/wfq/kissclipart-user-icon-clipart-user-profile-computer-icons-c68eb8a64144f4ea.png" alt="image" class="rounded-circle" name="image" id="image" height="150vh"  >
+  
+                                   
+                  </div>
+                  <div class="textareas" style="color: grey; text-align: center;">
+                    <strong><h3>{{student.username}}</h3></strong>
+                </div>
+                  
+    
+                  <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon3">Email</span>
+                    <input type="text" class="form-control" id="basic-url" #email="ngModel" disabled name="email" [(ngModel)]="student.email">
+                  </div>
+
+                  <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon3">Phone</span>
+                    <input type="text" class="form-control" id="basic-url" name="phonenumber" [(ngModel)]="student.phonenumber" disabled maxlength="10" required #phonenumber="ngModel">
+                  </div>
+                </div>
+              <div class="col-12 col-sm-6 col-md-5 second">
+                
+                
+                <div class="mb-3 mt-1">
+                  <label  class="form-label">Course</label>
+                  <input type="text" class="form-control" #place="ngModel" disabled name="place" [(ngModel)]="student.course">
+                     </div>
+                  <div class="mb-3 mt-1">
+                      <label  class="form-label">Address</label>
+                      <input disabled type="string" class="form-control" #address="ngModel" name="address" [(ngModel)]="student.address" required>
+                    </div>
+  
+                    <div class="mb-3">
+                      <label  class="form-label">Qualification</label>
+                      <input type="string" class="form-control"  #address="ngModel" disabled name="qualification" [(ngModel)]="student.qualification">
+                    </div>
+  
+                  
+  
+  
+                    <div class="mb-3">
+                      <label  class="form-label">Date Joined</label>
+                      <input type="string" class="form-control"  #address="ngModel" disabled name="datejoin" [(ngModel)]="student.datejoin">
+                    </div>
+
+                  
+              </div>
+  
+          </div>
+      </div>
+
+</div>

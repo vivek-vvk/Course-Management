@@ -1,0 +1,77 @@
+<div class="professorhome">
+
+    <div class="container-fluid">
+        <div class="py-2">
+          <h4 class="mx-2 mt-3"><i  class="fa-solid fa-th fa-md"></i> DASHBOARD</h4>
+        </div>
+        <div class="container-fluid">
+          <section id="dashboard">
+            <div class="row">
+              <div class="col-xl-4 col-12 ">
+                <div class="card">
+                  <div class="card-content">
+                    <div class="card-body">
+                      <i class=" fa fa-message" style="font-size:60px;color:black;"></i>
+                      <div class="float-end">
+                        <h2 class="text-center">{{datacount[1]}}</h2>
+                        <h5>Student Requests</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-12">
+                <div class="card">
+                  <div class="card-content">
+                    <div class="card-body">
+                      <i class="fa fa-address-card" style="font-size:60px;color:black;"></i>
+                      <div class="float-end">
+                        <h2 class="text-center">{{datacount[2]}}</h2>
+                        <h5>Approved Students</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-12">
+                <div class="card">
+                  <div class="card-content">
+                    <div class="card-body">
+                      <i class="fa fa-rectangle-list" style="font-size:60px;color:black;"></i>
+                      <div class="float-end">
+                        <h3 class="text-center">{{datacount[0]}}</h3>
+                        <h5>Total Courses</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      
+        <!--table-->
+      
+        <div class="py-5">
+          <table class="table table-bordered table-hover shadow">
+            <thead class="thead-light bg-info">
+              <tr>
+                <th scope="col">NAME</th>
+                <th scope="col">QUALIFICATION</th>
+                <th scope="col">COURSE</th>
+                <th scope="col">DATE JOINED</th>
+              </tr>
+            </thead>
+            <tbody class="tbody22">
+              <tr *ngFor=" let student of studentData">
+                <td scope="row" class="text-uppercase">{{student.username}}</td>
+                <td class="text-uppercase">{{student.qualification}}</td>
+                <td class="text-uppercase">{{student.course}}</td>
+                <td class="text-uppercase">{{student.datejoin}}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+
+</div>

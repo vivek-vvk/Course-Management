@@ -1,0 +1,52 @@
+
+<div  class="enrollform">
+
+<form #form="ngForm" (ngSubmit)="form.valid&&enroll()">
+     <div class="mb-5">
+        <h4 class="text-center">Enrollment Form</h4>
+     </div>
+
+     <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Name</label>
+      <input type="string" class="form-control"    name="username"  #username="ngModel"   [(ngModel)]="enrolldata.username"  >
+      
+     </div>
+
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Email Address</label>
+      <input type="email" class="form-control"  name="email" #email="ngModel" [(ngModel)]="enrolldata.email">
+    </div>
+
+     <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Phonenumber</label>
+        <input type="number" class="form-control" name="phonenumber" #phonenumber="ngModel"  [(ngModel)]="enrolldata.phonenumber" >  
+      </div>
+
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Address</label>
+        <input type="string" class="form-control" name="address"  #address="ngModel" [(ngModel)]="enrolldata.address">
+      </div>
+      
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Highest Qualification</label>
+        <input type="string" class="form-control" name="qualification" #qualification="ngModel"   [(ngModel)]="enrolldata.qualification" >
+      </div>
+      
+      <div class="mb-3">
+        <label class="form-label">Select Course</label>
+        <select  class="form-select" aria-label="Default select example" required #course="ngModel" name="course" [(ngModel)]="enrolldata.course">
+            <option *ngFor="let i of courses" value="{{i.title}}">{{i.title}}</option>
+          </select>
+          <small class="text-danger" *ngIf="form.submitted&&course.errors?.['required']">*Course required</small>
+
+      </div>
+    
+      <div class="d-grid mt-5">
+        <button type="submit" class="btn btn-primary">Register</button>
+
+      </div>
+
+  
+</form>
+
+</div>

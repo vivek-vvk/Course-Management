@@ -1,0 +1,49 @@
+
+
+
+.container{
+  padding-top: 40px;
+  min-height: 90vh;
+max-width: 60vh;
+}
+.box{
+display: flex;
+justify-content: space-between;
+}
+
+.buttoncolor{
+  background-color:rgba(255, 255, 255, 0.363);
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+  border-top: 1px solid white;
+  font-family: 'Hind', sans-serif;
+
+
+}
+
+.btngreen{
+  background-color: #255fdb;
+  border: 2px solid  #eaeeec;
+  color: white;
+  border-left: 2px solid white;
+ border-radius: 15px;
+
+}
+
+.btngreen:hover {
+  background-color: #0dc251;
+  transition: 0.3s;
+}
+
+.btnred{
+  background-color:#255fdb ;
+  border: 2px solid #edf2f3;
+  color: white;
+  border-right: 2px solid white;
+  border-radius: 15px;
+ 
+}
+.btnred:hover {
+  background-color: rgb(222, 54, 54);
+  transition: 0.3s;
+}

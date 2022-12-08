@@ -1,0 +1,63 @@
+.home22{
+    min-height: 90vh;
+   
+    background-color: rgba(245, 222, 179, 0.144);
+
+
+}
+
+.homebanner{
+    background-image: url('https://images.unsplash.com/photo-1624280433509-b01afeaf68e5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8dGVjaG5vbG9neSUyMGJhY2tncm91bmR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    height: 88vh;
+    display: flex;
+    justify-content: center;
+    padding-top: 27vh;
+    color: white;
+
+}
+
+button {
+    width: 7em;
+    height: 3em;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    color: white;
+  }
+  
+  #accept {
+    background-color: #0ba846;
+  }
+  
+  #accept:hover {
+    background-color: #0dc251;
+    transition: 0.3s;
+  }
+  
+  #cancel {
+    background-color: #ad0c0c;
+  }
+  
+  #cancel:hover {
+    background-color: #c70d0d;
+    transition: 0.3s;
+  }
+  
+  .homedata{
+    background-color: rgba(0, 0, 0, 0.238);
+    padding: 35px;
+    border-radius: 20px;
+  }
+  @media only screen and (max-width: 440px) {
+    .homedata {
+      padding: 28px;
+    }
+    
+  }
+  
+  .buttonContainer{
+    font-family: 'Titillium Web', sans-serif;
+  }

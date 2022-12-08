@@ -1,0 +1,67 @@
+<nav class="navbar navbar-light bg-light shadow sticky-top">
+    <div class="container-fluid mx-5">
+      <a class="navbar-brand d-flex" href="/professor">
+        <img src="https://gallery.kissclipart.com/20201125/eq/kissclipart-student-icon-back-to-school-icon-graduation-hat-ic-421311dd255d32ba.jpg" alt="" width="55" height="55" class="d-inline-block align-text-top">
+      <div><h3 style=" font-family: 'Titillium Web', sans-serif;" class="mt-2 mx-2 hddn">Course Management System</h3></div>
+    </a>
+      <div>
+      <div>
+        <input type="button" (click)="btn2()"  value="LogOut" class="btn btn-danger headlogout">
+    </div>
+    <div>
+        <button class="btn btn-light menubar" data-bs-toggle="offcanvas" href="#offcanvasExample"><i class="fa-solid fa-bars fa-xl"></i></button>
+    </div>
+
+    <div class="offcanvas offcanvas-start bg-light menuwidth" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel"></h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          
+            <div>
+           
+            <h4> <img src="https://library.kissclipart.com/20180910/ioq/kissclipart-woman-teacher-icon-clipart-computer-icons-teacher-84978ca5339279db.png"  style="width:40px ;">Professor Dashboard</h4>
+          </div>
+
+          <div>
+
+            <div   (click)="btn4()" class="textdata"><i class="fa-solid fa-th fa-lg pe-2"></i>Dashboard</div>
+            <div (click)="btn3()" class="textdata"><i class="fa-solid fa-message fa-lg pe-2"></i>Student Requests</div>
+            <div (click)="btn5()" class="textdata"><i class="fa-solid fa-address-card fa-lg pe-2"></i>Approved</div>
+            <div   (click)="btn6()" class="textdata"><i class="fa-solid fa-user-circle fa-lg pe-2"></i>Profile</div>
+            <div (click)="btn1()"  class="textdata"><i class="fa-solid fa-rectangle-list fa-lg pe-2"></i>Add Course</div>
+            <div   (click)="btn7()"  class="textdata"><i class="fa-solid fa-bell fa-lg fa-lg pe-2"></i>Notification</div>
+            <div   (click)="btn2()" class="textdata"> <i class="fa-solid fa-right-from-bracket fa-lg pe-2 text-danger"></i>Logout</div>
+                
+
+          </div>
+          
+        </div>
+    </div>
+      </div>
+
+
+
+    </div>
+    
+  </nav>
+  <div class="d-flex ">
+    <div class="sidebar bg-light shadow">
+        
+         <h4 class="mt-4 text-center"> <img src="https://library.kissclipart.com/20180910/ioq/kissclipart-woman-teacher-icon-clipart-computer-icons-teacher-84978ca5339279db.png"  style="width:40px ;"> PROFESSOR</h4>
+
+         <div (click)="btn4()"  class="para22 mt-4 "><i  class="fa-solid fa-th fa-lg pe-2"></i>Dashboard</div>
+         <div (click)="btn3()" class="para22"><i class="fa-solid fa-message fa-lg pe-2"></i>Student Request</div>
+         <div (click)="btn5()" class="para22 "><i class="fa-solid fa-address-card fa-lg pe-2"></i>Approved Students</div>
+         <div  (click)="btn6()"  class="para22"><i class="fa-solid fa-user-circle fa-lg pe-2"></i>Profile</div>
+         <div (click)="btn1()"  class="para22"><i class="fa-solid fa-rectangle-list fa-lg pe-2"></i>Add Course</div>
+         <div  (click)="btn7()" class="para22"><i class="fa-solid fa-bell fa-lg pe-2"></i>Notification</div>
+   
+        </div>
+    <div class="content">
+        
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+
